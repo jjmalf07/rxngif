@@ -1,1 +1,12 @@
-<h1>Picture Details</h1>
+<h1> Picture <%= @picture_id %> </h1>
+
+<a href="http://localhost:3000/delete_picture/<%= @picture_id %>">Delete this picture</a>
+<a href="http://localhost:3000/edit_picture_form/<%= @picture_id %>">Edit this picture</a>
+
+  <div>
+    <img src="<%= @picture_source %>">
+  </div>
+
+  <p> <%= @caption %> </p>
+
+  <p><a href="http://localhost:3000/all_pictures">All Pictures</a></p>
